@@ -1,0 +1,60 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="/css/pingpong.css">
+    <style>
+      #playground {
+        background: #1a5 url(images/playground.png);
+        width:  640px;
+        height: 320px;
+        position: relative;
+        overflow: hidden;
+      }
+      #ball {
+        background: #990000;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 150px;
+        top: 100px;
+        border-radius: 10px;
+
+      }
+      .paddle{
+        background: #00f;
+        left: 50px;
+        top: 70px;
+        position: absolute;
+        width: 20px;
+        height: 70px;
+      }
+      #paddleB {
+        left: 570px;
+      }
+    </style>
+
+</head>
+<body>
+  <header>
+    Ping Pong
+  </header>
+    <div id="game">
+      <!--game elements will go here -->
+      <div id="playground">
+        <div id="paddleA" class="paddle"></div>
+        <div id="paddleB" class="paddle"></div>
+        <div id="ball"></div>
+      </div>
+    </div>
+
+    <footer>
+      Example of creating a simple ping pong game
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/html5games.pingpong.js"></script>
+
+
+
+</body>
